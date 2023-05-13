@@ -1,0 +1,7 @@
+Array
+(
+    [excertp] => Excerpt
+    [title] => Title
+    [date] => Date
+    [category] => Category
+)

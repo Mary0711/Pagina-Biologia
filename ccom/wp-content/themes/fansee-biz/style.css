@@ -1,0 +1,383 @@
+/*	
+Theme Name:		Fansee Biz
+Theme URI:		https://fanseethemes.com/downloads/fansee-biz/
+Description:	Fansee Biz is a light multipurpose business WordPress theme that comes with a smooth design and extremely impressive functionality to unleash your website.
+Author:			Fansee Themes
+Author URI: 	http://fanseethemes.com/
+Template:		fansee-business
+Version:		1.1
+Tested up to:   5.8
+Requires PHP:   5.6
+License:		GNU General Public License v3 or later
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+Tags:			left-sidebar, right-sidebar, wide-blocks, block-styles, grid-layout, two-columns, flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, translation-ready, news, education, entertainment
+Text Domain:	fansee-biz
+*/
+
+p a,
+a,
+body a,
+ul li a,
+ol li a {
+    color: #000bba;
+    text-decoration: underline;
+}
+
+.site-title a,
+h1 a, h2 a, h3 a, h4 a, h5 a,
+.footer-widget ul li a,
+.fansee-biz-top-bar .inner-quick-contact ul li a,
+.header-navigation-wrapper .primary-menu-wrapper > ul li a, 
+.header-navigation-wrapper .primary-menu-wrapper > div > ul li a,
+.fansee-business-btn-primary,
+.fansee-biz-top-bar ul li a,
+ul[id^='social-menu-'] li a, ul[id^='social-menu'] li a,
+.button,
+.fansee-business-date a,
+.fansee-business-inner-banner-wrapper .breadcrumb-wrapper ul li a,
+.fansee-businsess-tags-wrapper ul li a,
+.single .post-categories li a,
+.post-navigation .nav-links > div a .nav-title,
+.darkmode .post-navigation .nav-links  a{
+    text-decoration: none;
+}
+
+.fansee-biz-header-wrapper {
+	background-color: #fff;
+}
+
+.darkmode .fansee-biz-header-wrapper,
+.darkmode  .comments-area,
+.darkmode  .post-navigation .nav-links > div{
+	background-color:  #1e1e1e;
+}
+.is-sticky .fansee-biz-header-wrapper{
+    z-index: 999 !important;
+	padding: 0;
+}
+
+.darkmode .post-navigation .nav-links > div {
+	box-shadow: 0 2px 10px 0 #d8dde600;
+}
+
+.darkmode .post-navigation .nav-links > div a .nav-title {
+	color: #fff;
+}
+
+.darkmode .post-navigation .nav-links > div:hover {
+    background-color: #262424;
+}
+
+/* top bar css */
+.fansee-biz-top-bar {
+	background: #f0f0f0;
+	border-bottom: 1px solid #eee;
+}
+
+.fansee-biz-top-bar .top-bar-content {
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+.fansee-biz-top-bar .inner-quick-contact ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.fansee-biz-top-bar .inner-quick-contact ul li {
+	color: #242424;
+	padding: 0px 20px 0 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+.fansee-biz-top-bar .inner-quick-contact ul li a {
+	color: #242424;
+}
+
+.fansee-biz-top-bar .inner-quick-contact ul li i {
+	margin-right: 10px;
+}
+
+.fansee-biz-top-bar .inner-quick-contact ul li:last-child {
+	border-right: none;
+}
+
+@media (max-width: 560px) {
+	.fansee-biz-top-bar .inner-quick-contact ul li {
+		flex: 0 0 50%;
+		text-align: center;
+	}
+}
+
+.fansee-biz-top-bar .top-bar-right-content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.fansee-biz-top-bar .top-bar-right-content li {
+	height: auto;
+}
+
+@media (max-width: 767px) {
+	.fansee-biz-top-bar .top-bar-right-content {
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+}
+
+.fansee-biz-top-bar .top-bar-btn {
+	margin: 0 0 0 30px;
+	padding: 12px 30px;
+	margin-top: 0;
+	background: #1955ca;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	transition: all 0.3s;
+	overflow: hidden;
+	position: relative;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.fansee-biz-top-bar .top-bar-btn * {
+	z-index: 9;
+	position: relative;
+}
+
+.fansee-biz-top-bar .top-bar-btn:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #2419b9;
+	top: 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.fansee-biz-top-bar .top-bar-btn:hover:after {
+	opacity: 1;
+	width: 100%;
+}
+
+body .site-header {
+	padding-top: 0;
+}
+
+.site-header .header-wrapper {
+    padding: 10px 0;
+}
+
+body .fansee-business-services-section .fansee-business-services-icon-box-wrapper .fansee-business-services-icon-box-inner img {
+    max-width: 135px;
+}
+
+/* slider  style */
+
+body .fansee-biz-feature-slider-inner .fansee-biz-feature-slider-inner-content h2 {
+	transform: translateY(0);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.2s;
+}
+
+.fansee-biz-feature-slider-inner .fansee-biz-feature-slider-inner-content p {
+    color: #fff;
+    opacity: 0;
+    transition: all 1s ease-in-out 0.5s;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.fansee-biz-feature-slider-inner .fansee-biz-feature-slider-inner-content .btn-group {
+    margin-top: 70px;
+    opacity: 0;
+    transition: all 1.5s ease-in-out 0.5s;
+}
+
+.fansee-biz-feature-slider .slick-active .fansee-biz-feature-slider-inner-content h2, 
+.fansee-biz-feature-slider .slick-active .fansee-biz-feature-slider-inner-content .btn-group,
+.fansee-biz-feature-slider .slick-active .fansee-biz-feature-slider-inner-content p {
+    opacity: 1;
+}
+
+.fansee-biz-social-menu ul li {
+	font-size: 0;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+/* inner banner options */
+
+.inner-banner-right .fansee-business-inner-banner-wrapper .fansee-business-inner-banner{
+	text-align: right;
+}
+
+.inner-banner-right .breadcrumb-wrapper ul {
+	justify-content: flex-end;
+}
+
+.inner-banner-center .fansee-business-inner-banner-wrapper .fansee-business-inner-banner{
+	text-align: center;
+}
+
+.inner-banner-center .breadcrumb-wrapper ul {
+	justify-content: center;
+}
+
+.slider-excerpt {
+    margin: 0 0 45px 0;
+}
+
+.slider-excerpt p {
+    margin: 0;
+    color: #d8d8d8;
+    font-size: 18px;
+}
+
+/* dark mode style */
+.darkmode .site-branding .site-title a,
+.darkmode .site-description,
+.darkmode .fansee-business-post .post-title a,
+.darkmode .entry-meta .url, 
+.search.darkmode .entry-meta .url, 
+.single.darkmode .entry-meta .url,
+.darkmode .post .entry-meta .url {
+	color: #fff;
+}
+
+.darkmode .fansee-business-post {
+	box-shadow: 0 0 2rem 0 #0f0f0f99;
+}
+
+.darkmode .fansee-business-date a {
+    color: #000;
+}
+.darkmode .fst-popup-search-wrapper .fst-popup-search-close,
+.darkmode #menu-toggler span {
+	background: #fff;
+}
+
+/* infinity business dark mode */
+
+.darkmode,
+.darkmode .fansee-biz-top-bar{
+	background: #080808;
+}
+
+.darkmode .fansee-biz-top-bar {
+	border-bottom: none;
+}
+
+.darkmode .site-branding .site-branding .site-title a,
+.darkmode .site-branding .site-branding p,
+.darkmode .fansee-biz-top-bar ul li,
+.darkmode .fansee-biz-top-bar ul li a {
+	color: #fff;
+}
+
+.darkmode .widget-area .widget ul li a {
+	color: #f6f6f6;
+}
+
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > ul > li.current-menu-item > a,
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > ul li a:hover,
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > ul li:hover a {
+    color: #e2e0e0;
+}
+
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > ul li a, 
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > div > ul li a,
+.darkmode, 
+.darkmode h1, 
+.darkmode .entry-title a, 
+.darkmode .entry-content h1, 
+.darkmode h2, 
+.darkmode .entry-content h2, 
+.darkmode h3, 
+.darkmode .entry-content h3, 
+.darkmode h4, 
+.darkmode .entry-content h4, 
+.darkmode h5, 
+.darkmode .entry-content h5,
+.darkmode h6, 
+.darkmode .entry-content h6,
+.darkmode .footer-widget .widget-title,
+.darkmode .footer-widget ul li,
+.darkmode .footer-widget ul li a,
+.darkmode .fansee-business-section-title.section-title-black,
+.darkmode .fansee-business-services-section .fansee-business-services-icon-box-wrapper .fansee-business-services-icon-box-inner h3,
+.darkmode .fansee-business-team-section .fansee-business-team-box .fansee-business-team-description h3,
+.darkmode .fansee-business-news-section .fansee-business-news-box .fansee-business-news-content h3 a,
+.darkmode .fansee-business-news-section .fansee-business-news-box .fansee-business-news-content .fansee-business-news-box-meta h4,
+.darkmode .fansee-business-news-section .fansee-business-news-box .fansee-business-news-date span.news-post-day,
+.darkmode .fansee-business-news-section .fansee-business-news-box .fansee-business-news-date span.news-post-year,
+.darkmode .fansee-business-testimonials-section .fansee-business-testimonials-box h3,
+.darkmode .fansee-business-header-icons .fansee-business-search-icon {
+	color: #fff;
+}
+
+.darkmode .fansee-business-loader-wrapper {
+	background: #717171;
+}
+.darkmode .fansee-business-footer-wrapper,
+.darkmode .site-header, 
+.darkmode .fansee-business-services-section .fansee-business-services-icon-box-wrapper .fansee-business-services-icon-box-inner,
+.darkmode .fansee-business-about-image:after,
+.darkmode .fansee-business-team-section .fansee-business-team-box ,
+.darkmode .fansee-business-news-section .fansee-business-news-box,
+.darkmode .fansee-business-news-section .fansee-business-news-box .fansee-business-news-date,
+.darkmode .fansee-business-testimonials-section .fansee-business-testimonials-box,
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > ul li ul, 
+.darkmode .header-navigation-wrapper .primary-menu-wrapper > div > ul li ul,
+.darkmode .widget-area #calendar_wrap{
+	background: #1e1e1e;
+}
+
+.darkmode .fansee-business-news-section .fansee-business-news-box .fansee-business-news-content .fansee-business-news-box-meta .post-categories a, 
+.darkmode .post-categories li a, 
+.darkmode .fansee-businsess-tags-wrapper ul li a {
+	border-color: #5c5c5c;
+}
+
+.darkmode .fansee-business-btn-primary:after,
+.darkmode .fst-popup-search-wrapper {
+	background: #5c5c5c;
+}
+
+@media (min-width: 767px) {
+	aside#secondary {
+	    padding-left: 0;
+	    padding-right: 50px;
+	}
+
+	.left-sidebar main#site-content > .row > .col-lg-4 {
+		order: 1;
+	}
+
+	.left-sidebar main#site-content > .row > .col-lg-8 {
+		order: 2;
+	}
+}
+
+@media (max-width: 560px) {
+	.fansee-biz-top-bar .inner-quick-contact ul li a,
+	.fansee-biz-top-bar .inner-quick-contact ul li {
+		font-size: 11px;
+		margin-bottom: 0;
+	}
+
+	li.open-hours,
+	li.address {
+		display: none;
+	}
+}
